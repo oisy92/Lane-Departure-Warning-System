@@ -1,25 +1,25 @@
 cmake_minimum_required (VERSION 2.6)
+
+# Creatng a project
 project (ldws)
-# The version number.
+
+# Versioning
 set (ldws_VERSION_MAJOR 1)
 set (ldws_VERSION_MINOR 0)
 
-
+# Link to OpenCV
 find_package(OpenCV REQUIRED COMPONENTS core imgproc highgui)
 
-#Bring the headers, such as Student.h into the project
-# include_directories(include)
- 
-#Can manually add the sources using the set command as follows:
-#set(SOURCES src/mainapp.cpp src/Student.cpp)
- 
-#However, the file(GLOB...) allows for wildcard additions:
+# Add source files
 set(SOURCES src/Main.cpp src/PreProcessing.cpp src/Processing.cpp)
- 
-add_executable(ldws_exec ${SOURCES})
-target_link_libraries(ldws_exec ${OpenCV_LIBS})
-# add_custom_target(ldws ALL DEPENDS "${CMAKE_CURRENT_SRC_DIR}/images/ProcessedFrame.PNG")
 
+# Create an executable
+add_executable(ldws_exec ${SOURCES})
+
+# Link to OpenCV libararies
+target_link_libraries(ldws_exec ${OpenCV_LIBS})
+
+# Copy images
 add_custom_command(
         TARGET ldws_exec POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E copy_directory
