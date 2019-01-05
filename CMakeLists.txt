@@ -14,7 +14,7 @@ find_package(OpenCV REQUIRED COMPONENTS core imgproc highgui)
 #set(SOURCES src/mainapp.cpp src/Student.cpp)
  
 #However, the file(GLOB...) allows for wildcard additions:
-set(SOURCES src/Main.cpp src/PreProcessing.cpp src/Processing.cpp src/pch.cpp)
+set(SOURCES src/Main.cpp src/PreProcessing.cpp src/Processing.cpp)
  
 add_executable(ldws_exec ${SOURCES})
 target_link_libraries(ldws_exec ${OpenCV_LIBS})
