@@ -10,11 +10,11 @@ Currently, the software is under development as it requires the following improv
 ![alt text](https://raw.githubusercontent.com/oisy92/Lane-Departure-Warning-System/master/images/ProcessedFrame.PNG)
 
 ## Prerequisites
-1. C++ Compiler
-2. cmake
-3. OpenCV 4.0.1
+1. C++ enviornment (Preferably VS2017)
+2. OpenCV 4.0.1
 
 ## How to use
-1. Create an empty build folder.
-2. Navigate the folder and run Cmake to generate a solution files.
-3. Compile and run the generated executable.
+### Linux
+Run Makefile
+### VS2017
+Run Main.cpp 

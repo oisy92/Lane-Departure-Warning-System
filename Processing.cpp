@@ -78,7 +78,7 @@ Mat Processing::DrawROI(void)
 */
 
 	Mat maskimage, maskmodel;
-	maskimage = imread("maskimg.JPG");
+	maskimage = imread("C:/Users/simsi/source/repos/ConsoleApplication2/ConsoleApplication2/maskimg.JPG");
 	cvtColor(maskimage, maskmodel, COLOR_BGR2GRAY);
 
 	for (int i = 0; i < maskmodel.rows; i++) {
