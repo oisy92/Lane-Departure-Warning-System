@@ -1,0 +1,19 @@
+cmake_minimum_required (VERSION 2.6)
+project (LDWS)
+
+set (LDWS_VERSION_MAJOR 1)
+set (LDWS_VERSION_MINOR 0)
+
+#Set source files
+set (SOURCES src/Main.cpp src/Processing.cpp src/Preprocessing.cpp)
+
+#Create executable
+add_executable (RunLDWS ${SOURCES})
+
+#Add search directory to find OpenCVConfig.Cmake
+set (CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${PROJECT_SOURCE_DIR}/cmake)
+
+#Add OpenCV library
+find_package(OpenCV REQUIRED core highgui imgproc)
+
+target_link_libraries(RunLDWS ${OpenCV_LIBS})
