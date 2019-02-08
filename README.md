@@ -7,7 +7,7 @@ Currently, the software is under development as it requires the following improv
 3. Line crossing detection and alarming.
 4. Practicle testing on road. (Software has only been tested on YouTube videos by projecting webcam to a second screen showing YouTube videos of car dashcams. You can find such videos by visiting "4K Relaxation Channel" on YouTube)
 
-![alt text](https://raw.githubusercontent.com/oisy92/Lane-Departure-Warning-System/master/images/ProcessedFrame.PNG)
+![alt text](https://github.com/oisy92/Lane-Departure-Warning-System/blob/master/images/LDWS.PNG)
 
 ## Prerequisites
 1. C++ enviornment (Preferably VS2017)
