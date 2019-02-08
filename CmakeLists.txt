@@ -1,6 +1,8 @@
+#Declare required Cmake version and project name
 cmake_minimum_required (VERSION 2.6)
 project (LDWS)
 
+#Versioning
 set (LDWS_VERSION_MAJOR 1)
 set (LDWS_VERSION_MINOR 0)
 
@@ -16,4 +18,5 @@ set (CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${PROJECT_SOURCE_DIR}/cmake)
 #Add OpenCV library
 find_package(OpenCV REQUIRED core highgui imgproc)
 
+#Link dependancies
 target_link_libraries(RunLDWS ${OpenCV_LIBS})
