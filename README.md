@@ -14,7 +14,6 @@ Currently, the software is under development as it requires the following improv
 2. OpenCV 4.0.1
 
 ## How to use
-### Linux
-Run Makefile
-### VS2017
-Run Main.cpp 
+1. Create an empty build folder.
+2. Navigate the folder and run Cmake to generate a solution files.
+3. Compile and run the generated executable.
