@@ -5,8 +5,8 @@ This is an implementation of Hough Lines algorithm to autonmously detect when a 
 The current version of the software is not optimum. Although it's capable of detecting road lines, it only does so when road lines are very clear, and no noise present in the frame (cars, buildings, trees). Hough Lines Algorithm will be joined with Neural Network to allow for better line detection performance.
 
 Currently, the software is under development as it requires the following improvements:
-1 - TensorFlow Machine Learning Framework.
-2 - Neural Network Implementation.
+1. TensorFlow Machine Learning Framework.
+2. Neural Network Implementation.
 
 ![alt text](https://github.com/oisy92/Lane-Departure-Warning-System/blob/master/images/LDWS.PNG)
 
